@@ -19,3 +19,6 @@ manual_server_start:
 	killall -9 node || true
 	nohup node server.js &
 #	ps aux | grep node
+
+kill_server:
+	killall -9 node || true
