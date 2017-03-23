@@ -15,3 +15,7 @@ dev-deps:
 clean_deps:
 	echo "No action required for clean deps"
 
+manual_server_start:
+	killall -9 node || true
+	node server.js &
+	ps aux | grep node
