@@ -17,5 +17,5 @@ clean_deps:
 
 manual_server_start:
 	killall -9 node || true
-	node server.js &
+	nohup node server.js &
 #	ps aux | grep node
